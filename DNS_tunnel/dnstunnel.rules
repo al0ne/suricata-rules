@@ -1,0 +1,1 @@
+alert udp $HOME_NET any -> $EXTERNAL_NET 53 (msg:"Suspicious dns request"; flow:established,to_server; content:"|01 00|"; depth:4; pcre:"/\x00\x10\x00\x01|\x00\x0f\x00\x01|\x00\x05\x00\x01/"; dsize:>200; classtype:trojan-activity; sid:3011001; rev:1; metadata:created_at 2018_11_09,by al0ne;)

@@ -1,0 +1,1 @@
+alert tcp $HOME_NET any -> any 3306 (msg: "mysql general_log write file"; flow: established;  content:"|03|"; depth: 5; content:"|67 65 6e 65 72 61 6c 5f 6c 6f 67 5f 66 69 6c 65|"; distance:0; sid: 3013005; rev: 1; metadata:created_at 2018_11_20,by al0ne;)

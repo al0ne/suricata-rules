@@ -1,0 +1,21 @@
+CobaltStrike login server   3016001
+CobaltStrike download.windowsupdate.com C2 Profile  3016002
+CobaltStrike HTTP beacon response   3016003
+CobaltStrike ARP Scan module    3016004
+Suspicious dns request  3011001
+Hacker backdoor or shell  Microsoft Corporation     3003001
+Hacker backdoor or shell Microsoft Windows      3003002
+***Windows Powershell Request UserAgent***      3013001
+***Linux wget/curl download .sh script***    3013002
+Suspicious netstat command traffic      3013003
+http GET data       3013004
+msfconsole powershell response  3016005
+mysql general_log write file    3013005
+Weevely PHP Backdoor Response   3016006
+Powershell Empire HTTP Request  3016007
+Powershell Empire HTTP Response 3016008
+webshell_caidao_php     3016009
+China hacker tools caidao response - column directory   3016010
+CobatlStrikt team servers 200 OK Space 3016011
+Cryptocurrency Miner Check By Submit	3013015
+Pools Response Cryptocurrency Miner		3013016

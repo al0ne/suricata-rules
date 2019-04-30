@@ -1,0 +1,3 @@
+alert tcp $HOME_NET any -> $EXTERNAL_NET any (msg:"Cryptocurrency Miner Check By Submit"; flow:to_server,established; content:"|22|method|22 3a|"; fast_pattern; content:"|22|submit|22 2c|"; distance:0; within:10; content:"|22|params|22 3a 7b|"; distance:0; within:15; content:"result|22 3a|"; nocase; distance:0; sid:3013015; rev:1; metadata:Detecting Mining Rules by Charmly;)
+
+alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:"Pools Response Cryptocurrency Miner"; flow:to_client,established; content:"|22|method|22 3a|"; nocase; content:"|22|params|22 3a|"; nocase; content:"|22|blob|22 3a|"; nocase; content:"|22|job_id|22 3a|"; nocase; sid:3013016; rev:1; metadata:Detecting Mining Rules by Charmly;)
