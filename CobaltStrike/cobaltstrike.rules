@@ -6,4 +6,4 @@ alert http $EXTERNAL_NET any -> $HOME_NET any (msg: "CobaltStrike HTTP beacon re
 
 alert http $HOME_NET any -> $EXTERNAL_NET any (msg: "CobaltStrike ARP Scan module"; flow:established; content:"POST"; http_method; content:"(ARP)"; http_client_body; content:"Scanner module is complete"; http_client_body; distance:0;   sid:3016004; rev:1; metadata:created_at 2018_11_15,by al0ne;)
 
-alert http any any -> any any (msg:"CobatlStrikt team servers 200 OK Space"; flow:from_server,established; content:"200"; http_stat_code; content:"HTTP/1.1 200 OK|20|"; http_response_line; threshold: type both, track by_src, count 3, seconds 60; reference:url,blog.fox-it.com/2019/02/26/identifying-cobalt-strike-team-servers-in-the-wild/;  sid:3016011; rev:1; metadata:created_at 2019_02_27,by al0ne;)
+alert http any any -> any any (msg:"CobatlStrikt team servers 200 OK Space"; flow:from_server,established; content:"200"; http_stat_code; content:"HTTP/1.1 200 OK|20|"; threshold: type both, track by_src, count 3, seconds 60; reference:url,blog.fox-it.com/2019/02/26/identifying-cobalt-strike-team-servers-in-the-wild/;  sid:3016011; rev:1; metadata:created_at 2019_02_27,by al0ne;)
