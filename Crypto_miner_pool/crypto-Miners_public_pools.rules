@@ -1,54 +1,37 @@
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (pool.minergate.com)"; dns_query; content:"pool.minergate.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000000; rev:1;)#Suricata 1.3+
+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (pool.minergate.com)"; dns_query; content:"pool.minergate.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000000; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (pool.minergate.com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|pool|09|minergate|03|com|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000000; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (pool.minexmr.com)"; dns_query; content:"pool.minexmr.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000001; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (pool.minexmr.com)"; dns_query; content:"pool.minexmr.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000001; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (pool.minexmr.com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|04|pool|07|minexmr|03|com|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000001; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (opmoner.com)"; dns_query; content:"opmoner.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000002; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (opmoner.com)"; dns_query; content:"opmoner.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000002; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (opmoner.com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|opmoner|03|com|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000002; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (crypto-pool.fr)"; dns_query; content:"crypto-pool.fr"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000003; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (crypto-pool.fr)"; dns_query; content:"crypto-pool.fr"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000003; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (crypto-pool.fr)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0b|crypto-pool|02|fr|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000003; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (backup-pool.com)"; dns_query; content:"backup-pool.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000004; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (backup-pool.com)"; dns_query; content:"backup-pool.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000004; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (backup-pool.com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0b|backup-pool|03|com|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000004; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (monerohash.com)"; dns_query; content:"monerohash.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000005; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (monerohash.com)"; dns_query; content:"monerohash.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000005; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (monerohash.com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0a|monerohash|03|com|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000005; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (poolto.be)"; dns_query; content:"poolto.be"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000006; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (poolto.be)"; dns_query; content:"poolto.be"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000006; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (poolto.be)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|poolto|02|be|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000006; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (xminingpool.com)"; dns_query; content:"xminingpool.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000007; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (xminingpool.com)"; dns_query; content:"xminingpool.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000007; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (xminingpool.com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0b|xminingpool|03|com|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000007; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (prohash.net)"; dns_query; content:"prohash.net"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000008; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (prohash.net)"; dns_query; content:"prohash.net"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000008; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (prohash.net)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|prohash|03|net|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000008; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (dwarfpool.com)"; dns_query; content:"dwarfpool.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000009; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (dwarfpool.com)"; dns_query; content:"dwarfpool.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000009; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (dwarfpool.com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|09|dwarfpool|03|com|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000009; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (crypto-pools.org)"; dns_query; content:"crypto-pools.org"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000010; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (crypto-pools.org)"; dns_query; content:"crypto-pools.org"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000010; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (crypto-pools.org)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0c|crypto-pools|03|org|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000010; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (monero.net)"; dns_query; content:"monero.net"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000011; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (monero.net)"; dns_query; content:"monero.net"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000011; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (monero.net)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|monero|03|net|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000011; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (hashinvest.net)"; dns_query; content:"hashinvest.net"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000012; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (hashinvest.net)"; dns_query; content:"hashinvest.net"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000012; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (hashinvest.net)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0a|hashinvest|03|net|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000012; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (moneropool.com)"; dns_query; content:"moneropool.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000013; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (moneropool.com)"; dns_query; content:"moneropool.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000013; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (moneropool.com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|0a|moneropool|03|com|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000013; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (xmrpool.eu)"; dns_query; content:"xmrpool.eu"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000014; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (xmrpool.eu)"; dns_query; content:"xmrpool.eu"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000014; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (xmrpool.eu)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|xmrpool|02|eu|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000014; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (ppxxmr.com)"; dns_query; content:"ppxxmr.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000015; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (ppxxmr.com)"; dns_query; content:"ppxxmr.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000015; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (ppxxmr.com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|06|ppxxmr|03|com|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000015; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (alimabi.cn)"; dns_query; content:"alimabi.cn"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000016; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (alimabi.cn)"; dns_query; content:"alimabi.cn"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000016; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (alimabi.cn)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|07|alimabi|02|cn|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000016; rev:1;)
-#Suricata 3.2+
-alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (aeon-pool.com)"; dns_query; content:"aeon-pool.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000017; rev:1;)#Suricata 1.3+
+alert dns $HOME_NET any -> any any (msg:"Observed DNS Query to public CryptoMining pool Domain (aeon-pool.com)"; dns_query; content:"aeon-pool.com"; nocase; isdataat:!1,relative; classtype:trojan-activity; sid:20000017; rev:1;)
 alert udp $HOME_NET any -> any 53 (msg:"Observed DNS Query to public CryptoMining pool Domain (aeon-pool.com)"; content:"|01|"; offset:2; depth:1; content:"|00 01 00 00 00 00 00|"; distance:1; within:7; content:"|09|aeon-pool|03|com|00|"; nocase; distance:0; fast_pattern; classtype:trojan-activity; sid:20000017; rev:1;)
