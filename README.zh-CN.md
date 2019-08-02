@@ -2,7 +2,7 @@
 # suricata-rules
 	Suricata是一个优秀的开源入侵检测系统，此项目记录安全运营人员提取的高质量Suricata IDS规则,欢迎大家提交。 
 
-### 规则编写要求如下
+## 规则编写要求如下
 每个规则对应新建目录如下
 
 	webshell检测	#规则目录名称-按照对应检测规则描述清楚即可
@@ -10,18 +10,18 @@
 	- websehll.rules	#自己提取的规则文件，尽量测试过提交。
 	- README	#可以描述一些规则相关的东西，便于他人理解，支持Markdown
 
-#### 规则目录
+### 规则目录
 	目录以单个CVE，黑客工具，威胁类型来命名，如果有对应规则目录，建议存放至已有规则目录中。
 
-#### 规则对应pcap包
+### 规则对应pcap包
 	规则对应的pcap通过Wireshark筛选后，利用菜单文件--保存特定分组--选择pcap格式上传。
 	便于识别恶意流数据，也是最小的，便于移动和备份
 
-#### 规则.rules
+### 规则.rules
 	规则文件命名随意，但后缀必须为rules，如：webshell_caidao.rules
 	文件中可以出现多个规则文件，README备注中写明
 规则内容建议如下：
-##### 示例
+#### 示例
 	sid类型：
 	0~1000000   Sourcefire VRT 保留
 	2000001~2999999     EMerging Threats(ET)
@@ -55,3 +55,9 @@
 	suricata-ids.rules	#所有规则的集合，更新时直接下载规则文件替换。
 	disable.conf	#分析过程中记录Suricata禁用规则(无效、误报等情况)
 	sid.txt 	#记录了所有规则的sid 避免重复，每次添加规则后必须更新sid.txt文件。
+
+# 致谢
+项目主要参与人员
+- **al0ne (https://github.com/al0ne)**
+- **Charmly  (https://github.com/Charm1y)**
+- **lrvy (https://github.com/lrvy)**
