@@ -3,7 +3,7 @@ English | [简体中文](./README.zh-CN.md)
 	Suricata is an excellent open source intrusion detection system that records the high quality Suricata IDS rules 
 	extracted by security operations staff. Welcome to submit 
 
-### Rules are written as follows
+## Rules are written as follows
 Each rule corresponds to the new directory as follows
 
 	webshell detect	#Rule directory name - clearly described according to the corresponding detection rules
@@ -11,20 +11,20 @@ Each rule corresponds to the new directory as follows
 	- websehll.rules	#The rule file extracted by yourself, try to test the submission.
 	- README	#Can describe some rules related things, easy for others to understand, support Markdown
 
-#### Rule directory
+### Rule directory
 	The directory is named after a single CVE, hacking tool, threat type. If there is a corresponding rule directory, 
 	it is recommended to store it in the existing rule directory.
 
-#### The rule corresponds to the pcap package
+### The rule corresponds to the pcap package
 	After the pcap corresponding to the rule is filtered by Wireshark, use the menu file 
 	-- save a specific group -- to select the pcap format to upload.
 Easy to identify malicious streaming data, also minimal, easy to move and backup
 
-#### rule.rules
+### rule.rules
 	The rules file is named randomly, but the suffix must be rules, such as: webshell_caidao.rules
 Multiple rule files can appear in the file, as stated in the README note
 The rules are recommended as follows：
-##### Example
+#### Example
 	sid：
 	0~1000000   Sourcefire VRT
 	2000001~2999999     EMerging Threats(ET)
@@ -60,3 +60,9 @@ Description of the root directory file of this project
 	disable.conf	#Suricata disable rules are recorded during analysis (invalid, false positives, etc.)
 	sid.txt 	#The sid of all rules is recorded to avoid duplication, and the sid.txt file must be updated 
 	each time the rule is added.
+
+# Acknowledgments
+- **al0ne (https://github.com/al0ne)**
+- **Charmly  (https://github.com/Charm1y)**
+- **lrvy (https://github.com/lrvy)**
+
