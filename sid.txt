@@ -3,6 +3,7 @@ CobaltStrike download.windowsupdate.com C2 Profile  3016002
 CobaltStrike HTTP beacon response   3016003
 CobaltStrike ARP Scan module    3016004
 Suspicious dns request  3011001
+CobaltStrike C2 Server  3016012
 Hacker backdoor or shell  Microsoft Corporation     3003001
 Hacker backdoor or shell Microsoft Windows      3003002
 ***Windows Powershell Request UserAgent***      3013001
