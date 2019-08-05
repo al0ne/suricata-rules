@@ -19,3 +19,39 @@ China hacker tools caidao response - column directory   3016010
 CobatlStrikt team servers 200 OK Space 3016011
 Cryptocurrency Miner Check By Submit	3013015
 Pools Response Cryptocurrency Miner		3013016
+Observed DNS Query to public CryptoMining pool Domain (pool.minergate.com)		3017000		
+Observed DNS Query to public CryptoMining pool Domain (pool.minergate.com)		3017001		
+Observed DNS Query to public CryptoMining pool Domain (pool.minexmr.com)		3017002		
+Observed DNS Query to public CryptoMining pool Domain (pool.minexmr.com)		301703		
+Observed DNS Query to public CryptoMining pool Domain (opmoner.com)		3017004		
+Observed DNS Query to public CryptoMining pool Domain (opmoner.com)		3017005		
+Observed DNS Query to public CryptoMining pool Domain (crypto-pool.fr)		3017006		
+Observed DNS Query to public CryptoMining pool Domain (crypto-pool.fr)		3017007		
+Observed DNS Query to public CryptoMining pool Domain (backup-pool.com)		3017008		
+Observed DNS Query to public CryptoMining pool Domain (backup-pool.com)		3017009		
+Observed DNS Query to public CryptoMining pool Domain (monerohash.com)		3017010		
+Observed DNS Query to public CryptoMining pool Domain (monerohash.com)		3017011		
+Observed DNS Query to public CryptoMining pool Domain (poolto.be)		3017012		
+Observed DNS Query to public CryptoMining pool Domain (poolto.be)		3017013		
+Observed DNS Query to public CryptoMining pool Domain (xminingpool.com)		3017014		
+Observed DNS Query to public CryptoMining pool Domain (xminingpool.com)		3017015		
+Observed DNS Query to public CryptoMining pool Domain (prohash.net)		3017016		
+Observed DNS Query to public CryptoMining pool Domain (prohash.net)		3017017		
+Observed DNS Query to public CryptoMining pool Domain (dwarfpool.com)		3017018		
+Observed DNS Query to public CryptoMining pool Domain (dwarfpool.com)		3017019		
+Observed DNS Query to public CryptoMining pool Domain (crypto-pools.org)		3017020		
+Observed DNS Query to public CryptoMining pool Domain (crypto-pools.org)		3017021		
+Observed DNS Query to public CryptoMining pool Domain (monero.net)		3017022		
+Observed DNS Query to public CryptoMining pool Domain (monero.net)		3017023		
+Observed DNS Query to public CryptoMining pool Domain (hashinvest.net)		3017024		
+Observed DNS Query to public CryptoMining pool Domain (hashinvest.net)		3017025		
+Observed DNS Query to public CryptoMining pool Domain (moneropool.com)		3017026		
+Observed DNS Query to public CryptoMining pool Domain (moneropool.com)		3017027		
+Observed DNS Query to public CryptoMining pool Domain (xmrpool.eu)		3017028		
+Observed DNS Query to public CryptoMining pool Domain (xmrpool.eu)		3017029		
+Observed DNS Query to public CryptoMining pool Domain (ppxxmr.com)		3017030		
+Observed DNS Query to public CryptoMining pool Domain (ppxxmr.com)		3017031		
+Observed DNS Query to public CryptoMining pool Domain (alimabi.cn)		3017032		
+Observed DNS Query to public CryptoMining pool Domain (alimabi.cn)		3017033		
+Observed DNS Query to public CryptoMining pool Domain (aeon-pool.com)		3017034		
+Observed DNS Query to public CryptoMining pool Domain (aeon-pool.com)		3017035		
