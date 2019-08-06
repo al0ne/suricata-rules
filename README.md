@@ -46,6 +46,7 @@ The rules are recommended as follows：
 	Violation operation    3014000～3014999
 	Sensitive information leakage    3015000～3015999
 	Hacking tool    3016000～3016999
+	Ctypto miner    3017000～3017999
 	Rev is incremented for each version of the rule version, metadata added creation date and creator
 	Reference is a reference source/reference material, such as a CVE number, or a fix, an attack description,
 	and so on.

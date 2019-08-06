@@ -43,6 +43,7 @@
 	违规操作    3014000～3014999
 	敏感信息泄漏    3015000～3015999
 	黑客工具    3016000～3016999
+	挖矿    3017000～3017999
 	rev为规则版本每次修改递增，metadata添加创建日期与创建人
 	reference为引用来源/参考资料，例如某CVE编号，或者修复方案，攻击说明等。
 	alert http any any -> any any (msg:"webshell_caidao_php"; flow:established; content:"POST";
