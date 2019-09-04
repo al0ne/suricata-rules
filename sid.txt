@@ -56,3 +56,4 @@ Observed DNS Query to public CryptoMining pool Domain (alimabi.cn)		3017032
 Observed DNS Query to public CryptoMining pool Domain (alimabi.cn)		3017033		
 Observed DNS Query to public CryptoMining pool Domain (aeon-pool.com)		3017034		
 Observed DNS Query to public CryptoMining pool Domain (aeon-pool.com)		3017035		
+System Information Collection By Trojan    3017036
